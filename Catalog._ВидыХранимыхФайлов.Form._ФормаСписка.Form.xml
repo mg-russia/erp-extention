@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСформироватьШк" id="18">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.СформироватьШк</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСформироватьШкРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="24"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="25">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="28">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="31">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Code</DataPath>
+					<TitleTextColor>style:FieldTextColor</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<TitleTextColor>style:FieldTextColor</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="35"/>
+				</LabelField>
+				<LabelField name="Метаданные" id="8">
+					<DataPath>Список.Метаданные</DataPath>
+					<TitleTextColor>style:FieldTextColor</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="МетаданныеКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="МетаданныеРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<LabelField name="ТипДанныхОбъекта" id="16">
+					<DataPath>Список.ТипДанныхОбъекта</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<ContextMenu name="ТипДанныхОбъектаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ТипДанныхОбъектаРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<CheckBoxField name="Отслеживать" id="12">
+					<DataPath>Список.Отслеживать</DataPath>
+					<TitleTextColor>style:FieldTextColor</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтслеживатьКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ОтслеживатьРасширеннаяПодсказка" id="38"/>
+				</CheckBoxField>
+				<LabelField name="Комментарий" id="10">
+					<DataPath>Список.Комментарий</DataPath>
+					<TitleTextColor>style:FieldTextColor</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="ПутьАвтозагрузки" id="14">
+					<DataPath>1/25</DataPath>
+					<TitleTextColor>style:FieldTextColor</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ПутьАвтозагрузкиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПутьАвтозагрузкиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="Приоритет" id="19">
+					<DataPath>Список.Приоритет</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ПриоритетКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="41"/>
+				</LabelField>
+				<LabelField name="ИмяМакетаШтрихКода" id="21">
+					<DataPath>Список.ИмяМакетаШтрихКода</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ИмяМакетаШтрихКодаКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ИмяМакетаШтрихКодаРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog._ВидыХранимыхФайлов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьШк" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать шк</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать шк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьШк</Action>
+		</Command>
+	</Commands>
+</Form>

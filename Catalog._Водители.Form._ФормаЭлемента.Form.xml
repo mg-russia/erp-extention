@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<InputField name="МашинаМарка" id="5">
+			<DataPath>Объект.МашинаМарка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="МашинаМаркаКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="МашинаМаркаРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="МашинаГосНомер" id="7">
+			<DataPath>Объект.МашинаГосНомер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="МашинаГосНомерКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МашинаГосНомерРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ПрицепМарка" id="9">
+			<DataPath>Объект.ПрицепМарка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ПрицепМаркаКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ПрицепМаркаРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<InputField name="ПрицепГосНомер" id="11">
+			<DataPath>Объект.ПрицепГосНомер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ПрицепГосНомерКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ПрицепГосНомерРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="НомерУдостоверения" id="13">
+			<DataPath>Объект.НомерУдостоверения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НомерУдостоверенияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="НомерУдостоверенияРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Перевозчик" id="15">
+			<DataPath>Объект.Перевозчик</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ПеревозчикКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ПеревозчикРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="Телефон" id="17">
+			<DataPath>Объект.Телефон</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ТелефонКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="38"/>
+		</InputField>
+		<InputField name="ПаспортныеДанные" id="28">
+			<DataPath>Объект.ПаспортныеДанные</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ПаспортныеДанныеКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ПаспортныеДанныеРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="30"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._Водители</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код/замена</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="IMRPPN" id="7">
+					<DataPath>Объект.IMRPPN</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMRPPNКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="IMRPPNРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="IMPN" id="10">
+					<DataPath>Объект.IMPN</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMPNКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="IMPNРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завод</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<InputField name="WERKS" id="13">
+					<DataPath>Объект.WERKS</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="WERKSКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="WERKSРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименования</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="85"/>
+			<ChildItems>
+				<InputField name="IMDSC" id="16">
+					<DataPath>Объект.IMDSC</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMDSCКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="IMDSCРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ESDE" id="19">
+					<DataPath>Объект.ESDE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ESDEКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ESDEРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа6" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<InputField name="IMSTS" id="37">
+					<DataPath>Объект.IMSTS</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMSTSКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="IMSTSРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статистика</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="87"/>
+			<ChildItems>
+				<InputField name="IMTIPM" id="22">
+					<DataPath>Объект.IMTIPM</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMTIPMКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="IMTIPMРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="IMMODM" id="25">
+					<DataPath>Объект.IMMODM</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMMODMКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="IMMODMРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="IMPAR8" id="28">
+					<DataPath>Объект.IMPAR8</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMPAR8КонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="IMPAR8РасширеннаяПодсказка" id="30"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="88">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведение СН</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="89"/>
+			<ChildItems>
+				<InputField name="IMLSRN" id="31">
+					<DataPath>Объект.IMLSRN</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMLSRNКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="IMLSRNРасширеннаяПодсказка" id="33"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа7" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="93"/>
+			<ChildItems>
+				<InputField name="IMWHT" id="34">
+					<DataPath>Объект.IMWHT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMWHTКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="IMWHTРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа8" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закупка</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="95"/>
+			<ChildItems>
+				<InputField name="IMSTCK" id="40">
+					<DataPath>Объект.IMSTCK</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMSTCKКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="IMSTCKРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="IMOMUL" id="43">
+					<DataPath>Объект.IMOMUL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="IMOMULКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="IMOMULРасширеннаяПодсказка" id="45"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Цены" id="55">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Цены</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЦеныКонтекстноеМеню" id="56"/>
+			<AutoCommandBar name="ЦеныКоманднаяПанель" id="57"/>
+			<ExtendedTooltip name="ЦеныРасширеннаяПодсказка" id="58"/>
+			<SearchStringAddition name="ЦеныСтрокаПоиска" id="59">
+				<Source>
+					<lf:elementId>55</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ЦеныСтрокаПоискаКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="ЦеныСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЦеныСостояниеПросмотра" id="62">
+				<Source>
+					<lf:elementId>55</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ЦеныСостояниеПросмотраКонтекстноеМеню" id="63"/>
+				<ExtendedTooltip name="ЦеныСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЦеныУправлениеПоиском" id="65">
+				<Source>
+					<lf:elementId>55</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ЦеныУправлениеПоискомКонтекстноеМеню" id="66"/>
+				<ExtendedTooltip name="ЦеныУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЦеныНомерСтроки" id="68">
+					<DataPath>Объект.Цены.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЦеныНомерСтрокиКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ЦеныНомерСтрокиРасширеннаяПодсказка" id="70"/>
+				</LabelField>
+				<InputField name="ЦеныJJLIPR" id="71">
+					<DataPath>Объект.Цены.JJLIPR</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЦеныJJLIPRКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ЦеныJJLIPRРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="ЦеныIMNU" id="74">
+					<DataPath>Объект.Цены.IMNU</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЦеныIMNUКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ЦеныIMNUРасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="ЦеныДатаОбнов" id="77">
+					<DataPath>Объект.Цены.ДатаОбнов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЦеныДатаОбновКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ЦеныДатаОбновРасширеннаяПодсказка" id="79"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="ДатаОбнов" id="52">
+			<DataPath>Объект.ДатаОбнов</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаОбновКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="ДатаОбновРасширеннаяПодсказка" id="54"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._НоменклатураКорп</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

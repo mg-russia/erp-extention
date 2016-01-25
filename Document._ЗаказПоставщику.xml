@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Document uuid="1759db68-1641-4ba9-8b70-0ae9cd0e661b">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject._ЗаказПоставщику" category="Object">
+				<xr:TypeId>b05aa60c-cdf3-4951-b971-dd23fa7a84f9</xr:TypeId>
+				<xr:ValueId>5e455a6d-b7fc-4ec5-ab8d-d8c820bb3527</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef._ЗаказПоставщику" category="Ref">
+				<xr:TypeId>0a8aa123-d2f5-44a3-9fe9-d1af184b60e8</xr:TypeId>
+				<xr:ValueId>872dd759-fb2f-4711-9ed4-bed6560635a5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection._ЗаказПоставщику" category="Selection">
+				<xr:TypeId>b6cfa77e-9aee-49f6-9890-9673275a99ec</xr:TypeId>
+				<xr:ValueId>20910250-9da8-4ecd-a538-0e2fd96dbc0f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList._ЗаказПоставщику" category="List">
+				<xr:TypeId>1e083bb0-3dba-4884-9732-5a93dba8459d</xr:TypeId>
+				<xr:ValueId>8f005291-e959-4f78-8f12-d929cee3e459</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager._ЗаказПоставщику" category="Manager">
+				<xr:TypeId>58a85aca-7ce7-4fbf-9524-87a3afdfb52c</xr:TypeId>
+				<xr:ValueId>f3d22dcc-55d2-4201-89a4-5501488f1392</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>_ЗаказПоставщику</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>_Заказ поставщику</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Numerator/>
+			<NumberType>String</NumberType>
+			<NumberLength>9</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<NumberPeriodicity>Nonperiodical</NumberPeriodicity>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<Characteristics/>
+			<BasedOn/>
+			<InputByString>
+				<xr:Field>Document._ЗаказПоставщику.StandardAttribute.Number</xr:Field>
+			</InputByString>
+			<CreateOnInput>Use</CreateOnInput>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<Posting>Allow</Posting>
+			<RealTimePosting>Allow</RealTimePosting>
+			<RegisterRecordsDeletion>AutoDeleteOnUnpost</RegisterRecordsDeletion>
+			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
+			<SequenceFilling>AutoFill</SequenceFilling>
+			<RegisterRecords/>
+			<PostInPrivilegedMode>true</PostInPrivilegedMode>
+			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

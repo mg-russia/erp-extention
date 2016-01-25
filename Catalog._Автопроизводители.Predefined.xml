@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems">
+	<Item id="0f357d66-99b3-4a19-a51b-5b49517dd62f">
+		<Name>Nissan</Name>
+		<Code>000000003</Code>
+		<Description>Nissan</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e3354c39-01d2-4c62-b104-84b45caf3d63">
+		<Name>Toyota</Name>
+		<Code>000000002</Code>
+		<Description>Toyota</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2421ed8f-84e7-4fcc-9c9c-987217f06fa4">
+		<Name>Volkswagen</Name>
+		<Code>000000001</Code>
+		<Description>Volkswagen</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<InputField name="Производитель" id="15">
+			<DataPath>Объект.Производитель</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ПроизводительКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ПроизводительРасширеннаяПодсказка" id="32"/>
+			<Events>
+				<Event name="OnChange">ПроизводительПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Ширина" id="7">
+			<DataPath>Объект.Ширина</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ШиринаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ШиринаРасширеннаяПодсказка" id="33"/>
+			<Events>
+				<Event name="OnChange">ШиринаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Высота" id="9">
+			<DataPath>Объект.Высота</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ВысотаКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ВысотаРасширеннаяПодсказка" id="34"/>
+			<Events>
+				<Event name="OnChange">ВысотаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Радиус" id="11">
+			<DataPath>Объект.Радиус</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="РадиусКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="РадиусРасширеннаяПодсказка" id="35"/>
+			<Events>
+				<Event name="OnChange">РадиусПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Сезонность" id="13">
+			<DataPath>Объект.Сезонность</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="СезонностьКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СезонностьРасширеннаяПодсказка" id="36"/>
+			<Events>
+				<Event name="OnChange">СезонностьПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="СезонностьШин" id="28">
+			<DataPath>Объект.СезонностьШин</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="СезонностьШинКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="СезонностьШинРасширеннаяПодсказка" id="37"/>
+			<Events>
+				<Event name="OnChange">СезонностьШинПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="НормаПробегаКм" id="5">
+			<DataPath>Объект.НормаПробегаКм</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НормаПробегаКмКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="НормаПробегаКмРасширеннаяПодсказка" id="38"/>
+		</InputField>
+		<InputField name="Номер" id="17">
+			<DataPath>Объект.Номер</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НомерКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="39"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._МоделиШин</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

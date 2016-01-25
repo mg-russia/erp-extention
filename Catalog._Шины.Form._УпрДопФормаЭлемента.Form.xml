@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСформироватьНаименование" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СформироватьНаименование</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаСформироватьНаименованиеРасширеннаяПодсказка" id="19"/>
+			</Button>
+			<Button name="ФормаИсторияШины" id="18">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ИсторияШины</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаИсторияШиныРасширеннаяПодсказка" id="20"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="22"/>
+		</InputField>
+		<InputField name="МодельШины" id="5">
+			<DataPath>Объект.МодельШины</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="МодельШиныКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="МодельШиныРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="СерийныйНомер" id="7">
+			<DataPath>Объект.СерийныйНомер</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="СерийныйНомерКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СерийныйНомерРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="СостояниеШины" id="15">
+			<DataPath>Объект.СостояниеШины</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальное состояние шины</v8:content>
+				</v8:item>
+			</Title>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="СостояниеШиныКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="СостояниеШиныРасширеннаяПодсказка" id="25"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._Шины</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьНаименование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьНаименование</Action>
+		</Command>
+		<Command name="ИсторияШины" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История шины</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История шины</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИсторияШины</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

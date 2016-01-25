@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПерейтиКПравиламРегистрации" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПерейтиКПравиламРегистрации</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаПерейтиКПравиламРегистрацииРасширеннаяПодсказка" id="35"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="Метаданные" id="7">
+			<DataPath>Объект.Метаданные</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ChoiceButton>true</ChoiceButton>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="МетаданныеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МетаданныеРасширеннаяПодсказка" id="38"/>
+			<Events>
+				<Event name="StartChoice">МетаданныеНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ТипДанныхОбъекта" id="15">
+			<DataPath>Объект.ТипДанныхОбъекта</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ТипДанныхОбъектаКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ТипДанныхОбъектаРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="Комментарий" id="5">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="ПутьАвтозагрузки" id="11">
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ПутьАвтозагрузкиКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ПутьАвтозагрузкиРасширеннаяПодсказка" id="41"/>
+		</InputField>
+		<InputField name="Отслеживать" id="9">
+			<DataPath>Объект.Отслеживать</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ОтслеживатьКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ОтслеживатьРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="НачОтслежВМоментРег" id="33">
+			<DataPath>Объект.НачОтслежВМоментРег</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НачОтслежВМоментРегКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="НачОтслежВМоментРегРасширеннаяПодсказка" id="43"/>
+		</InputField>
+		<InputField name="КонтрОтДатыДокументаДней" id="13">
+			<DataPath>Объект.КонтрОтДатыДокументаДней</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КонтрОтДатыДокументаДнейКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КонтрОтДатыДокументаДнейРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<InputField name="Приоритет" id="18">
+			<DataPath>Объект.Приоритет</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ПриоритетКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="ИмяМакетаШтрихКода" id="20">
+			<DataPath>Объект.ИмяМакетаШтрихКода</DataPath>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ИмяМакетаШтрихКодаКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ИмяМакетаШтрихКодаРасширеннаяПодсказка" id="46"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._ВидыХранимыхФайлов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПерейтиКПравиламРегистрации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к правилам регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к правилам регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиКПравиламРегистрации</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

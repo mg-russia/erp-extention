@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="74"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="75">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="76"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="78">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="79"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="81">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="82"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Code</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="84"/>
+				</LabelField>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="ИмяАнгл" id="34">
+					<DataPath>Список.ИмяАнгл</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ИмяАнглКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ИмяАнглРасширеннаяПодсказка" id="86"/>
+				</LabelField>
+				<LabelField name="Должность" id="8">
+					<DataPath>Список.Должность</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="87"/>
+				</LabelField>
+				<LabelField name="Подразделение" id="46">
+					<DataPath>Список.Подразделение</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="Функция" id="52">
+					<DataPath>Список.Функция</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ФункцияКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ФункцияРасширеннаяПодсказка" id="89"/>
+				</LabelField>
+				<LabelField name="Виза" id="10">
+					<DataPath>Список.Виза</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ВизаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ВизаРасширеннаяПодсказка" id="90"/>
+				</LabelField>
+				<LabelField name="ФизическоеЛицо" id="50">
+					<DataPath>Список.ФизическоеЛицо</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ФизическоеЛицоКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ФизическоеЛицоРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+				<LabelField name="ВодительскиеПраваНомер" id="54">
+					<DataPath>Список.ВодительскиеПраваНомер</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ВодительскиеПраваНомерКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ВодительскиеПраваНомерРасширеннаяПодсказка" id="92"/>
+				</LabelField>
+				<LabelField name="НомерТелефона" id="44">
+					<DataPath>Список.НомерТелефона</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="93"/>
+				</LabelField>
+				<LabelField name="ВодительскиеПраваКатегория" id="12">
+					<DataPath>Список.ВодительскиеПраваКатегория</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ВодительскиеПраваКатегорияКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ВодительскиеПраваКатегорияРасширеннаяПодсказка" id="94"/>
+				</LabelField>
+				<LabelField name="ВодительскиеПраваОкончание" id="14">
+					<DataPath>Список.ВодительскиеПраваОкончание</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ВодительскиеПраваОкончаниеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ВодительскиеПраваОкончаниеРасширеннаяПодсказка" id="95"/>
+				</LabelField>
+				<LabelField name="ДатаОкончанияВизы" id="16">
+					<DataPath>Список.ДатаОкончанияВизы</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ДатаОкончанияВизыКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДатаОкончанияВизыРасширеннаяПодсказка" id="96"/>
+				</LabelField>
+				<CheckBoxField name="КорпоративныйТелефон" id="40">
+					<DataPath>Список.КорпоративныйТелефон</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КорпоративныйТелефонКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="КорпоративныйТелефонРасширеннаяПодсказка" id="97"/>
+				</CheckBoxField>
+				<LabelField name="ДатаОкончанияЗагранПаспорта" id="18">
+					<DataPath>Список.ДатаОкончанияЗагранПаспорта</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ДатаОкончанияЗагранПаспортаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ДатаОкончанияЗагранПаспортаРасширеннаяПодсказка" id="98"/>
+				</LabelField>
+				<LabelField name="ДатаОкончанияКонтракта" id="20">
+					<DataPath>Список.ДатаОкончанияКонтракта</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ДатаОкончанияКонтрактаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДатаОкончанияКонтрактаРасширеннаяПодсказка" id="99"/>
+				</LabelField>
+				<LabelField name="ДатаПриема" id="22">
+					<DataPath>Список.ДатаПриема</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ДатаПриемаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДатаПриемаРасширеннаяПодсказка" id="100"/>
+				</LabelField>
+				<LabelField name="ДатаРождения" id="24">
+					<DataPath>Список.ДатаРождения</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="101"/>
+				</LabelField>
+				<LabelField name="ДатаУвольнения" id="26">
+					<DataPath>Список.ДатаУвольнения</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ДатаУвольненияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДатаУвольненияРасширеннаяПодсказка" id="102"/>
+				</LabelField>
+				<CheckBoxField name="ЕстьАккоунтВорк" id="30">
+					<DataPath>Список.ЕстьАккоунтВорк</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЕстьАккоунтВоркКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ЕстьАккоунтВоркРасширеннаяПодсказка" id="103"/>
+				</CheckBoxField>
+				<LabelField name="ЗакрепленныйАвтомобиль" id="32">
+					<DataPath>Список.ЗакрепленныйАвтомобиль</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ЗакрепленныйАвтомобильКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ЗакрепленныйАвтомобильРасширеннаяПодсказка" id="104"/>
+				</LabelField>
+				<LabelField name="Компьютер" id="36">
+					<DataPath>Список.Компьютер</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="КомпьютерКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="КомпьютерРасширеннаяПодсказка" id="105"/>
+				</LabelField>
+				<LabelField name="КороткийНомер" id="38">
+					<DataPath>Список.КороткийНомер</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="КороткийНомерКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="КороткийНомерРасширеннаяПодсказка" id="106"/>
+				</LabelField>
+				<LabelField name="НомерЗагранПаспорта" id="42">
+					<DataPath>Список.НомерЗагранПаспорта</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="НомерЗагранПаспортаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="НомерЗагранПаспортаРасширеннаяПодсказка" id="107"/>
+				</LabelField>
+				<LabelField name="Почта" id="48">
+					<DataPath>Список.Почта</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ПочтаКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ПочтаРасширеннаяПодсказка" id="108"/>
+				</LabelField>
+				<LabelField name="ОсновноеОбразование" id="56">
+					<DataPath>1/55</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ОсновноеОбразованиеКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ОсновноеОбразованиеРасширеннаяПодсказка" id="109"/>
+				</LabelField>
+				<LabelField name="ПрофильноеОбразование" id="70">
+					<DataPath>Список.ПрофильноеОбразование</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ПрофильноеОбразованиеКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ПрофильноеОбразованиеРасширеннаяПодсказка" id="110"/>
+				</LabelField>
+				<LabelField name="ПропискаАдрес" id="58">
+					<DataPath>Список.ПропискаАдрес</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ПропискаАдресКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ПропискаАдресРасширеннаяПодсказка" id="111"/>
+				</LabelField>
+				<LabelField name="СборочныйПост" id="62">
+					<DataPath>Список.СборочныйПост</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="СборочныйПостКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СборочныйПостРасширеннаяПодсказка" id="112"/>
+				</LabelField>
+				<LabelField name="СтрахНомерПФР" id="64">
+					<DataPath>Список.СтрахНомерПФР</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="СтрахНомерПФРКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="СтрахНомерПФРРасширеннаяПодсказка" id="113"/>
+				</LabelField>
+				<LabelField name="Языки" id="68">
+					<DataPath>Список.Языки</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ЯзыкиКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ЯзыкиРасширеннаяПодсказка" id="114"/>
+				</LabelField>
+				<LabelField name="РасстояниеЖиветДоОфиса" id="60">
+					<DataPath>Список.РасстояниеЖиветДоОфиса</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="РасстояниеЖиветДоОфисаКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="РасстояниеЖиветДоОфисаРасширеннаяПодсказка" id="115"/>
+				</LabelField>
+				<LabelField name="ТабельныйНомер" id="66">
+					<DataPath>Список.ТабельныйНомер</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="ТабельныйНомерКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ТабельныйНомерРасширеннаяПодсказка" id="116"/>
+				</LabelField>
+				<LabelField name="КодРегМенеджер" id="72">
+					<DataPath>Список.КодРегМенеджер</DataPath>
+					<TitleTextColor>style:FieldTextColor</TitleTextColor>
+					<TitleBackColor>win:ButtonLightShadow</TitleBackColor>
+					<ContextMenu name="КодРегМенеджерКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="КодРегМенеджерРасширеннаяПодсказка" id="117"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog._Сотрудники</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

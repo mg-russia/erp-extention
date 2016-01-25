@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="12">
+			<Width>88</Width>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<InputField name="Период" id="4">
+					<DataPath>Период</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период:                        </v8:content>
+						</v8:item>
+					</Title>
+					<Width>34</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПериодДатаНачала" id="8">
+					<DataPath>Период.StartDate</DataPath>
+					<ContextMenu name="ПериодДатаНачалаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ПериодДатаНачалаРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">ПериодДатаНачалаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПериодДатаОкончания" id="10">
+					<DataPath>Период.EndDate</DataPath>
+					<ContextMenu name="ПериодДатаОкончанияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПериодДатаОкончанияРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="OnChange">ПериодДатаОкончанияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="15">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<CheckBoxField name="Автомасштаб" id="13">
+					<DataPath>Автомасштаб</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="АвтомасштабКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="АвтомасштабРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">АвтомасштабПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="СохранитьВФайл" id="3">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СохранитьВФайл</CommandName>
+			<Parameter xsi:nil="true"/>
+			<ExtendedTooltip name="СохранитьВФайлРасширеннаяПодсказка" id="22"/>
+		</Button>
+		<GanttChartField name="ДГ" id="1">
+			<DataPath>ДГ</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Width>400</Width>
+			<Height>18</Height>
+			<ContextMenu name="ДГКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДГРасширеннаяПодсказка" id="23"/>
+		</GanttChartField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДГ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ДГ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:GanttChart</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Автомасштаб" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автомасштаб</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьВФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВФайл</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems">
+	<Item id="a0205b8c-b1c9-4fe5-a5d1-721df9d63483">
+		<Name>ЗАП</Name>
+		<Code>ЗАП      </Code>
+		<Description>Запаска</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="98129ca6-c692-462b-bb72-c4918b11b243">
+		<Name>ЗЛ</Name>
+		<Code>ЗЛ       </Code>
+		<Description>Заднее левое колесо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3b8d8c9c-ebfc-4dbe-8278-12454cb5e8ad">
+		<Name>ЗП</Name>
+		<Code>ЗП       </Code>
+		<Description>Заднее правое колесо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="65dc30cd-f3a6-418c-a16e-43eb4ed18ef7">
+		<Name>ПЛ</Name>
+		<Code>ПЛ       </Code>
+		<Description>Переднее левое колесо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c73af75a-d445-416d-8fc0-c246946031e9">
+		<Name>ПП</Name>
+		<Code>ПП       </Code>
+		<Description>Переднее правое колесо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

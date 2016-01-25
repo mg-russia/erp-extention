@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>35</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>35</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<InputField name="Родитель" id="5">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>35</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="РодительКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="Тип" id="7">
+			<DataPath>Объект.Тип</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>35</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ТипКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Модель" id="9">
+			<DataPath>Объект.Модель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>35</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="МодельКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="МодельРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<InputField name="Измерение" id="11">
+			<DataPath>Объект.Измерение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>35</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ИзмерениеКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ИзмерениеРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="ВидНоменклатуры" id="13">
+			<DataPath>1/0:93901967-cf49-4d42-895d-3da86d62781f</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>35</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ВидНоменклатурыКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВидНоменклатурыРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ДатаОкончанияСертификата" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата оконч. серт.</v8:content>
+				</v8:item>
+			</Title>
+			<Width>35</Width>
+			<ContextMenu name="ДатаОкончанияСертификатаКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ДатаОкончанияСертификатаРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<CheckBoxField name="Использовать" id="15">
+			<DataPath>Объект.Использовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ИспользоватьРасширеннаяПодсказка" id="38"/>
+		</CheckBoxField>
+		<Table name="Сертификаты" id="19">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Сертификаты</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СертификатыКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="СертификатыКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="СертификатыРасширеннаяПодсказка" id="39"/>
+			<SearchStringAddition name="СертификатыСтрокаПоиска" id="40">
+				<Source>
+					<lf:elementId>19</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СертификатыСтрокаПоискаКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="СертификатыСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СертификатыСостояниеПросмотра" id="43">
+				<Source>
+					<lf:elementId>19</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СертификатыСостояниеПросмотраКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="СертификатыСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СертификатыУправлениеПоиском" id="46">
+				<Source>
+					<lf:elementId>19</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СертификатыУправлениеПоискомКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="СертификатыУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СертификатыНомерСтроки" id="22">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СертификатыНомерСтрокиКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СертификатыНомерСтрокиРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<InputField name="СертификатыДатаНачСерт" id="24">
+					<DataPath>Объект.Сертификаты.ДатаНачСерт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СертификатыДатаНачСертКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="СертификатыДатаНачСертРасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="СертификатыДатаКонСерт" id="26">
+					<DataPath>Объект.Сертификаты.ДатаКонСерт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СертификатыДатаКонСертКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СертификатыДатаКонСертРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="СертификатыВалютаСерт" id="28">
+					<DataPath>Объект.Сертификаты.ВалютаСерт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СертификатыВалютаСертКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СертификатыВалютаСертРасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._Статистика</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>
